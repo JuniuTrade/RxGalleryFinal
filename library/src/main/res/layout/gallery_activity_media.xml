@@ -7,29 +7,33 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center">
+        android:layout_height="45dp">
 
         <TextView
             android:id="@+id/tv_toolbar_title"
             style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:textStyle="normal" />
 
         <TextView
             android:id="@+id/tv_over_action"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="right"
-            android:layout_margin="8dp"
-            android:text="@string/gallery_over_button_text" />
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/gallery_over_button_text"
+            android:textSize="16dp" />
     </android.support.v7.widget.Toolbar>
 
     <View
         android:id="@+id/toolbar_divider"
         android:layout_width="match_parent"
-        android:layout_height="1dp" />
+        android:layout_height="1dp"
+        android:visibility="gone" />
 
     <FrameLayout
         android:id="@+id/fragment_container"
