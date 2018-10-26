@@ -25,7 +25,7 @@ import cn.finalteam.rxgalleryfinal.imageloader.UniversalImageLoader;
  * Author:pengjianbo  Dujinyang
  * Date:16/5/7 下午3:58
  */
-public class Configuration implements Parcelable {
+public class Configuration<T extends MediaBean> implements Parcelable {
 
     public static final Creator<Configuration> CREATOR = new Creator<Configuration>() {
         @Override

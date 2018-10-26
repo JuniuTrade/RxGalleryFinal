@@ -32,7 +32,7 @@ import io.reactivex.disposables.Disposable;
  * author: pengjianbo  Dujinyang
  * author: karl-dujinyang
  */
-public class RxGalleryFinal {
+public class RxGalleryFinal<T extends MediaBean> {
 
     private Configuration configuration = new Configuration();
     private RxBusResultDisposable<BaseResultEvent> isRadioDisposable;
@@ -106,7 +106,7 @@ public class RxGalleryFinal {
         return this;
     }
 
-    public RxGalleryFinal selected(@NonNull List<MediaBean> list) {
+    public RxGalleryFinal selected(@NonNull List<T> list) {
         configuration.setSelectedList(list);
         return this;
     }
